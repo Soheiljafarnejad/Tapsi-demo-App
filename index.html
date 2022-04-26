@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/fonts/icon/css/fontawesome.min.css" />
+    <title>تپسی دمو</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <article class="navbar">
+          <a href="#">
+            <img class="navbar__logo" src="assets/images/logo.svg" alt="" />
+          </a>
+          <div class="navbar__icon">
+            <div class="navbar__icon--one"></div>
+            <div class="navbar__icon--two"></div>
+            <div class="navbar__icon--three"></div>
+          </div>
+          <ul class="navbar__menu list">
+            <li><a href="#">وبلاگ</a></li>
+            <li><a href="#">فرصت های شغلی</a></li>
+            <li><a href="#">خدمات کسب و کار ها</a></li>
+            <li><a href="#">پشتیبانی</a></li>
+          </ul>
+          <button class="btn navbar__btn">دانلود تپسی</button>
+        </article>
+      </nav>
+      <section class="hero">
+        <picture>
+          <source
+            srcset="assets/images/banner.webp"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="assets/images/banner.jpg"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="assets/images/banner-mobile.webp"
+            media="(max-width: 768px)"
+          />
+          <source
+            srcset="assets/images/banner-mobile.jpg"
+            media="(max-width: 768px)"
+          />
+          <img alt="banner" src="assets/images/banner.jpg" />
+        </picture>
+      </section>
+      <section class="intro">
+        <h1>تپسی</h1>
+        <h2>اپلیکیشن درخواست خودرو و پیک</h2>
+        <div class="intro__container--btn">
+          <button class="btn intro__button">
+            <i class="fas fa-chevron-down"></i>
+            <span>دانلود اپلیکشن مسافران</span>
+          </button>
+          <button class="btn intro__button">
+            <i class="fab fa-markdown"></i>
+            <span>وب اپلیکیشن مسافران</span>
+          </button>
+          <button class="btn intro__button--dark">
+            <i class="fas fa-chevron-down"></i>
+            <span>دانلود اپلیکشن رانندگان</span>
+          </button>
+          <button class="btn intro__button--dark">
+            <i class="fas fa-car"></i>
+            <span>ثبت نام رایگان رانندگان</span>
+          </button>
+        </div>
+      </section>
+      <section class="intro--mobile">
+        <picture>
+          <source
+            srcset="assets/images/mockup-phone.webp"
+            media="(min-width: 1024px)"
+          />
+          <source
+            srcset="assets/images/mockup-phone.png"
+            media="(min-width: 1024px)"
+          />
+          <img alt="phone" class="banner-phone" />
+        </picture>
+      </section>
+    </header>
+
+    <main class="container">
+      <section class="services">
+        <nav class="services__nav">
+          <a
+            class="services__nav__link services--selected"
+            data-id="nav-classic"
+          >
+            <img src="assets/images/cc-classic.png" alt="tapsi-classic-icon" />
+            <p>تپسی کلاسیک</p>
+          </a>
+
+          <a class="services__nav__link" data-id="nav-motopeyk">
+            <img src="assets/images/cc-motopeyk.png" alt="motopeyk-icon" />
+            <p>موتوپیک</p>
+          </a>
+
+          <a class="services__nav__link" data-id="nav-autopeyk">
+            <img src="assets/images/cc-autopeyk.png" alt="autopeyk-icon" />
+            <p>اتوپیک</p>
+          </a>
+
+          <a class="services__nav__link" data-id="nav-plus">
+            <img src="assets/images/cc-plus.png" alt="tapsi-plus-icon" />
+            <p>تپسی پلاس</p>
+          </a>
+
+          <a class="services__nav__link" data-id="nav-tel">
+            <img src="assets/images/cc-tel.png" alt="tapsi-tel-icon" />
+            <p>تپسی تلفنی</p>
+          </a>
+
+          <a class="services__nav__link" data-id="nav-hamyar">
+            <img src="assets/images/cc-hamyar.png" alt="hamyar-icon" />
+            <p>همیار</p>
+          </a>
+
+          <a class="services__nav__link" data-id="nav-hamkhat">
+            <img src="assets/images/cc-hamkhat.png" alt="hamkhat-icon" />
+            <p>هم‌خط</p>
+          </a>
+
+          <a class="services__nav__link" data-id="nav-taxi">
+            <img src="assets/images/cc-taxi.png" alt="tapsi-taxi-icon" />
+            <p>تاکسی</p>
+          </a>
+
+          <a class="services__nav__link" data-id="nav-line">
+            <img src="assets/images/cc-line.png" alt="tapsi-line-icon" />
+            <p>تپسی لاین</p>
+          </a>
+        </nav>
+
+        <article class="servicesTab">
+          <div class="servicesTab__item servicesTab--selected" id="nav-classic">
+            <div class="tab__description">
+              <h3>تپسی کلاسیک</h3>
+              <p>
+                با سرویس کلاسیک تپسی، یک خودروی اختصاصی برای رسیدن به مقصدتان
+                دارید. تپسی کلاسیک، راهی سریع و آسان برای سفرهای درون‌شهری در هر
+                ساعتی از روز است. در این سرویس، شما امکان تعیین دو یا چند مقصد و
+                همچنین توقف در مسیر را دارید.
+              </p>
+            </div>
+            <div class="tab__img">
+              <picture>
+                <source
+                  srcset="https://tapsi.ir/images/home/illus-classic.webp"
+                  type="image/webp"
+                />
+                <source
+                  srcset="https://tapsi.ir/images/home/illus-classic.png"
+                  type="image/png"
+                />
+                <img
+                  class="img-responsive no-padding main-image"
+                  src="https://tapsi.ir/images/home/illus-classic.png"
+                  alt="tapsi-classic"
+                />
+              </picture>
+            </div>
+          </div>
+          <div class="servicesTab__item" id="nav-motopeyk">
+            <div class="tab__description">
+              <h3>موتوپیک</h3>
+              <p>
+                با استفاده از سرویس موتوپیک، بسته‌ها و مرسولاتتان با پیک موتور
+                به مقصد ارسال می‌شوند. این سرویس مناسب زمانی است که می‌خواهید
+                مرسوله سریع‌تر به مقصد برسد. در این سرویس، شما می‌توانید مسیر
+                رسیدن مرسوله‌تان به مقصد را به صورت لحظه‌ای روی نقشه دنبال کنید.
+              </p>
+            </div>
+            <div class="tab__img">
+              <picture>
+                <source
+                  srcset="https://tapsi.ir/images/home/illus-motopeyk.webp"
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="https://tapsi.ir/images/home/illus-motopeyk.png"
+                  type="image/png"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  class="img-responsive no-padding main-image"
+                  alt="motopeyk"
+                />
+              </picture>
+            </div>
+          </div>
+          <div class="servicesTab__item" id="nav-autopeyk">
+            <div class="tab__description">
+              <h3>اتوپیک</h3>
+              <p>
+                اتوپیک سرویسی برای ارسال بسته‌های شما با خودرو است. این سرویس،
+                برای زمانی مناسب است که بسته‌های شما، با موتور قابل ارسال نیستند
+                و یا در حین جابجایی، نیاز به مراقبت بیشتری دارند. در این سرویس
+                نیز امکان رصد لحظه ‌به لحظه موقعیت مکانی مرسوله تا زمان رسیدن به
+                مقصد فراهم است.
+              </p>
+            </div>
+            <div class="tab__img">
+              <picture>
+                <source
+                  srcset="https://tapsi.ir/images/home/illus-autopeyk.webp"
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="https://tapsi.ir/images/home/illus-autopeyk.png"
+                  type="image/png"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  class="img-responsive no-padding main-image"
+                  alt="autopeyk"
+                />
+              </picture>
+            </div>
+          </div>
+          <div class="servicesTab__item" id="nav-plus">
+            <div class="tab__description">
+              <h3>تپسی پلاس</h3>
+              <p>
+                در سرویس پلاس تاکسی اینترنتی تپسی، خودرویی با مدل بالاتر و عمر
+                کمتر، به دنبال شما خواهد آمد. همچنین، رانندگان این سرویس
+                بالاترین امتیاز را از مسافران دریافت کرده‌اند. در این سرویس که
+                در حال حاضر در تهران فعال است، امکان تعیین چند مقصد یا توقف در
+                حین سفر، وجود دارد.
+              </p>
+            </div>
+            <div class="tab__img">
+              <picture>
+                <source
+                  srcset="https://tapsi.ir/images/home/illus-plus.webp"
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="https://tapsi.ir/images/home/illus-plus.png"
+                  type="image/png"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  class="img-responsive no-padding main-image"
+                  alt="tapsi-plus"
+                />
+              </picture>
+            </div>
+          </div>
+          <div class="servicesTab__item" id="nav-tel">
+            <div class="tab__description">
+              <h3>تپسی تلفنی</h3>
+              <p>
+                سرویس تپسی تلفنی یا ۱۶۳۰، این امکان را به شما می‌دهد که بدون
+                نیاز به اینترنت و اپلیکیشن، درخواست خودرو بدهید. این سرویس تاکسی
+                تلفنی مناسب زمانی است که به هر دلیلی دسترسی به اینترنت یا
+                اپلیکیشن ندارید. همچنین سرویس تلفنی تپسی، راه حلی مناسب برای
+                افرادی است که کار کردن با اپلیکیشن‌های موبایلی برایشان راحت
+                نیست.
+              </p>
+            </div>
+            <div class="tab__img">
+              <picture>
+                <source
+                  srcset="https://tapsi.ir/images/home/illus-tel.webp"
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="https://tapsi.ir/images/home/illus-tel.png"
+                  type="image/png"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  class="img-responsive no-padding main-image"
+                  alt="tapsi-tel"
+                />
+              </picture>
+            </div>
+          </div>
+          <div class="servicesTab__item" id="nav-hamyar">
+            <div class="tab__description">
+              <h3>همیار</h3>
+              <p>
+                سرویس همیار تپسی، به جای شما خرید می‌کند. کافیست فروشگاه مورد
+                نظر خود را به عنوان مبدا مشخص کرده و لیست خریدتان را داخل اپ
+                وارد کنید. این خرید‌ها می‌تواند از سوپرمارکت یا داروخانه مورد
+                نظر شما باشند.
+              </p>
+            </div>
+            <div class="tab__img">
+              <picture>
+                <source
+                  srcset="https://tapsi.ir/images/home/illus-hamyar.webp"
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="https://tapsi.ir/images/home/illus-hamyar.png"
+                  type="image/png"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  class="img-responsive no-padding main-image"
+                  alt="hamyar"
+                />
+              </picture>
+            </div>
+          </div>
+          <div class="servicesTab__item active" id="nav-hamkhat">
+            <div class="tab__description">
+              <h3>هم‌خط</h3>
+              <p>
+                سرویس هم‌خط تپسی شما را با مینی‌بوس‌ به مقصد می‌رساند. با
+                استفاده از سرویس هم‌خط بعد از انتخاب مسیر سفر، بلیت‌تان را
+                خریداری کنید و سریع‌تر و راحت‌تر به مقصد برسید. این سرویس خطی
+                بسیار ارزان‌تر از دیگر سرویس‌های تپسی است و شما را سریع‌تر و
+                راحت‌تر از حمل‌ونقل عمومی به مقصدتان می‌رساند. شما می‌توانید از
+                قبل بلیت هم خط را رزرو کنید و با رعایت فاصله اجتماعی به مقصد
+                برسید. سرویس مینی بوس آنلاین فعلا فقط در تهران فعال است.
+              </p>
+            </div>
+            <div class="tab__img">
+              <picture>
+                <source
+                  srcset="https://tapsi.ir/images/home/illus-hamkhat.webp"
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="https://tapsi.ir/images/home/illus-hamkhat.png"
+                  type="image/png"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  class="img-responsive no-padding main-image"
+                  alt="hamkhat"
+                />
+              </picture>
+            </div>
+          </div>
+          <div class="servicesTab__item" id="nav-taxi">
+            <div class="tab__description">
+              <h3>تپسی تاکسی</h3>
+              <p>
+                در سرویس تاکسی تپسی، تاکسی‌های زرد یا سبز شما را به مقصدتان
+                می‌رسانند. این سرویس در حال حاضر در تهران فعال است و چنانچه به
+                دلایلی مانند ورود به محدوده طرح ترافیک یا طرح آلودگی هوا، ترجیح
+                بدهید از تاکسی برای رفت‌وآمدتان استفاده کنید، گزینه مناسبی خواهد
+                بود.
+              </p>
+            </div>
+            <div class="tab__img">
+              <picture>
+                <source
+                  srcset="https://tapsi.ir/images/home/illus-taxi.webp"
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="https://tapsi.ir/images/home/illus-taxi.png"
+                  type="image/png"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  class="img-responsive no-padding main-image"
+                  alt="tapsi-taxi"
+                />
+              </picture>
+            </div>
+          </div>
+          <div class="servicesTab__item" id="nav-line">
+            <div class="tab__description">
+              <h3>تپسی لاین</h3>
+              <p>
+                تپسی لاین سرویسی است که امکان سفر اشتراکی را برایتان فراهم
+                می‌کند. در این سرویس شما با مسافر دیگری که هم‌مسیرتان است،
+                هم‌سفر خواهید بود و هزینه سفرتان تقسیم می‌شود. این سرویس در حال
+                حاضر به دلیل شرایط همه‌گیری بیماری کرونا از دسترس خارج شده اما
+                با بهبود شرایط می‌توانید از سرویس لاین استفاده کنید.
+              </p>
+            </div>
+            <div class="tab__img">
+              <picture>
+                <source
+                  srcset="https://tapsi.ir/images/home/illus-line.webp"
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="https://tapsi.ir/images/home/illus-line.png"
+                  type="image/png"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  class="img-responsive no-padding main-image"
+                  alt="tapsi-line"
+                />
+              </picture>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="office">
+        <article class="office__cart office__img--right">
+          <img
+            class="office__img"
+            src="assets/images/i-mac-1.png"
+            alt="tap30"
+          />
+          <div class="office__text">
+            <h2>خدمات تپسی ویژه کسب و کارها</h2>
+            <p>
+              پنل سازمانی تپسی، یک سامانه تحت وب است که به سادگی امکان درخواست
+              هم‌زمان تعداد نامحدودی خودرو و پیک را برای کسب‌وکارها و سازمان‌ها
+              فراهم می‌کند. و با استفاده از آن می‌توانید ماموریت های درون‌شهری و
+              ارسال کالاهای خود را به سادگی مدیریت کنید.
+            </p>
+            <button class="btn">ورود و ثبت نام پنل سازمانی</button>
+          </div>
+        </article>
+        <article class="office__cart">
+          <img
+            class="office__img"
+            src="assets/images/macbook.png"
+            alt="tap30"
+          />
+          <div class="office__text">
+            <h2>خرید کد اعتبار تپسی</h2>
+            <p>
+              کاربران، کسب‌وکارها و سازمان‌ها می‌توانند به تعداد و مبلغ مورد
+              نظرشان، کد اعتبار یا کد تخفیف تپسی تهیه کرده، برای خود، پرسنل و یا
+              مشتریانشان استفاده کنند و از تخفیف‌های ویژه تپسی نیز بهره‌مند
+              شوند. این کدها امکان سفارشی‌سازی بر اساس مبدا، مقصد، زمان، درصد و
+              مبلغ را دارند.
+            </p>
+            <button class="btn">خرید کد اعتبار و تخفیف</button>
+          </div>
+        </article>
+      </section>
+
+      <section class="travel">
+        <article class="travel__box">
+          <img class="travel__img" src="assets/images/travell.png" alt="" />
+          <div class="travel__cart">
+            <header class="travel__cart--header">
+              <span class="badge">ویژه</span>
+              <p>اقامت رایگان</p>
+              <p>سفر سه روز</p>
+              <h4>سفر به اعماق کویر</h4>
+            </header>
+            <div class="travel__cart--main">
+              <img
+                class="travel__avatar"
+                src="assets/images/avatar-1.jpg"
+                alt=""
+              />
+              <img
+                class="travel__avatar"
+                src="assets/images/avatar-2.jpeg"
+                alt=""
+              />
+              <img
+                class="travel__avatar"
+                src="assets/images/avatar-3.jpg"
+                alt=""
+              />
+              <span class="travel__avatar avatar__other">+10</span>
+              <p>پیشنهادی</p>
+            </div>
+            <footer class="travel__cart--footer">
+              <div>
+                <i class="fas fa-heart"></i>
+                <span>12</span>
+                <i class="far fa-eye"></i>
+                <span>24</span>
+              </div>
+              <div>
+                <i class="far fa-edit"></i>
+                <i class="far fa-trash-alt"></i>
+              </div>
+            </footer>
+          </div>
+        </article>
+
+        <article class="travel__box">
+          <img class="travel__img" src="assets/images/travell-2.jpg" alt="" />
+          <div class="travel__cart">
+            <header class="travel__cart--header">
+              <span class="badge badge-light">معمولی</span>
+              <p>سفر سه روز</p>
+              <h4>سفر به اعماق کویر</h4>
+            </header>
+            <div class="travel__cart--main">
+              <img
+                class="travel__avatar"
+                src="assets/images/avatar-1.jpg"
+                alt=""
+              />
+              <img
+                class="travel__avatar"
+                src="assets/images/avatar-2.jpeg"
+                alt=""
+              />
+              <img
+                class="travel__avatar"
+                src="assets/images/avatar-3.jpg"
+                alt=""
+              />
+              <span class="travel__avatar avatar__other">+10</span>
+              <p>پیشنهادی</p>
+            </div>
+            <footer class="travel__cart--footer">
+              <div>
+                <i class="fas fa-heart"></i>
+                <span>12</span>
+                <i class="far fa-eye"></i>
+                <span>24</span>
+              </div>
+              <div>
+                <i class="far fa-edit"></i>
+                <i class="far fa-trash-alt"></i>
+              </div>
+            </footer>
+          </div>
+        </article>
+
+        <article class="travel__box">
+          <img class="travel__img" src="assets/images/travell-3.jpg" alt="" />
+          <div class="travel__cart">
+            <header class="travel__cart--header">
+              <span class="badge">ویژه</span>
+              <p>اقامت رایگان</p>
+              <p>سفر سه روز</p>
+              <h4>سفر به اعماق کویر</h4>
+            </header>
+            <div class="travel__cart--main">
+              <img
+                class="travel__avatar"
+                src="assets/images/avatar-1.jpg"
+                alt=""
+              />
+              <img
+                class="travel__avatar"
+                src="assets/images/avatar-2.jpeg"
+                alt=""
+              />
+              <img
+                class="travel__avatar"
+                src="assets/images/avatar-3.jpg"
+                alt=""
+              />
+              <span class="travel__avatar avatar__other">+10</span>
+              <p>پیشنهادی</p>
+            </div>
+            <footer class="travel__cart--footer">
+              <div>
+                <i class="fas fa-heart"></i>
+                <span>12</span>
+                <i class="far fa-eye"></i>
+                <span>24</span>
+              </div>
+              <div>
+                <i class="far fa-edit"></i>
+                <i class="far fa-trash-alt"></i>
+              </div>
+            </footer>
+          </div>
+        </article>
+
+        <article class="travel__box">
+          <img class="travel__img" src="assets/images/travell-4.jpg" alt="" />
+          <div class="travel__cart">
+            <header class="travel__cart--header">
+              <span class="badge badge-light">معمولی</span>
+              <p>سفر سه روز</p>
+              <h4>سفر به اعماق کویر</h4>
+            </header>
+            <div class="travel__cart--main">
+              <img
+                class="travel__avatar"
+                src="assets/images/avatar-1.jpg"
+                alt=""
+              />
+              <img
+                class="travel__avatar"
+                src="assets/images/avatar-2.jpeg"
+                alt=""
+              />
+              <img
+                class="travel__avatar"
+                src="assets/images/avatar-3.jpg"
+                alt=""
+              />
+              <span class="travel__avatar avatar__other">+10</span>
+              <p>پیشنهادی</p>
+            </div>
+            <footer class="travel__cart--footer">
+              <div>
+                <i class="fas fa-heart"></i>
+                <span>12</span>
+                <i class="far fa-eye"></i>
+                <span>24</span>
+              </div>
+              <div>
+                <i class="far fa-edit"></i>
+                <i class="far fa-trash-alt"></i>
+              </div>
+            </footer>
+          </div>
+        </article>
+      </section>
+
+      <section class="accordion">
+        <h2>اطلاعات راننده</h2>
+
+        <section class="radio">
+          <div class="radio__box">
+            <input type="radio" name="select" id="type-a" checked />
+            <label for="type-a">راننده عمومی</label>
+          </div>
+          <div class="radio__box">
+            <input type="radio" name="select" id="type-b" />
+            <label for="type-b">راننده خصوصی</label>
+          </div>
+        </section>
+
+        <article class="accordion__box">
+          <header class="accordion__header">
+            <h5>رزومه</h5>
+            <i class="fas fa-chevron-up"></i>
+          </header>
+          <div class="accordion__body">
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در
+              ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
+              و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای
+              زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و
+              متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان
+              رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی
+              ایجاد کرد در این صورت می توان امید داشت که تمام و دشواری موجود در
+              ارائه راهکارها
+            </p>
+          </div>
+        </article>
+        <article class="accordion__box">
+          <header class="accordion__header">
+            <h5>سابقه کار</h5>
+            <i class="fas fa-chevron-up"></i>
+          </header>
+          <div class="accordion__body">
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در
+              ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
+              و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای
+              زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و
+              متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان
+              رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی
+              ایجاد کرد در این صورت می توان امید داشت که تمام و دشواری موجود در
+              ارائه راهکارها
+            </p>
+          </div>
+        </article>
+        <article class="accordion__box">
+          <header class="accordion__header">
+            <h5>تحصیلات</h5>
+            <i class="fas fa-chevron-up"></i>
+          </header>
+          <div class="accordion__body">
+            <p>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در
+              ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
+              و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای
+              زیادی در شصت و سه درصد گذشته حال و آینده شناخت فراوان جامعه و
+              متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان
+              رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی
+              ایجاد کرد در این صورت می توان امید داشت که تمام و دشواری موجود در
+              ارائه راهکارها
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="about">
+        <h2>ارتباط با ما</h2>
+        <h3>شما میتوانید نظر و انتقادات خود را برای ما بفرستید</h3>
+        <article class="about__container--all">
+          <div class="about__social">
+            <i class="fab fa-twitter-square about__icon"></i>
+            <i class="fab fa-facebook-square about__icon"></i>
+            <i class="fab fa-linkedin about__icon"></i>
+          </div>
+          <div class="about__description">
+            <div>
+              <p>تهران خیابان یکم کوچه دوم پلاک سوم</p>
+              <i class="fas fa-map-marker-alt about__icon"></i>
+            </div>
+            <div>
+              <p>989123456789+</p>
+              <i class="fas fa-mobile-alt about__icon"></i>
+            </div>
+            <div>
+              <p>info@tap30.ir</p>
+              <i class="far fa-envelope about__icon"></i>
+            </div>
+          </div>
+          <img class="about__map" src="assets/images/map.png" alt="" />
+          <div class="about__content">
+            <div class="about__container--form">
+              <h3>نظرات شما</h3>
+              <form class="about__form">
+                <input type="text" placeholder="نام" />
+                <input type="email" placeholder="ایمیل" />
+                <textarea placeholder="نظر خود را وارد کنید..."></textarea>
+                <button type="submit" class="btn">ارسال</button>
+              </form>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <article class="footer__container">
+        <ul>
+          <img class="footer__logo" src="assets/images/logo.svg" alt="" />
+          <li>اپلیکیشن درخواست خودرو و پیک</li>
+          <p class="footer__description">
+            تمام حقوق مادی و معنوی این وبسایت متعلق به تپسی است.
+          </p>
+          <div class="footer__icons">
+            <i class="fab fa-facebook-f footer__icon"></i>
+            <i class="fab fa-linkedin-in footer__icon"></i>
+            <i class="fab fa-twitter footer__icon"></i>
+            <i class="fab fa-instagram footer__icon"></i>
+            <i class="fab fa-telegram-plane footer__icon"></i>
+          </div>
+        </ul>
+        <ul>
+          <h6>تپسی</h6>
+          <li>وبلاگ تپسی</li>
+          <li>فرصت شغلی</li>
+          <li>تماس با ما</li>
+          <li>لوگو و هویت سازمانی</li>
+          <li>معرفی راننده به تپسی</li>
+        </ul>
+        <ul>
+          <h6>مسافران</h6>
+          <li>دانلود اپ مسافر</li>
+          <li>نسخه وب تپسی</li>
+          <li>پرسش متداول تپسی</li>
+          <li>شرایط و قواین مسافران</li>
+          <li>باشگاه مشتریان</li>
+        </ul>
+        <ul>
+          <h6>رانندگان</h6>
+          <li>دانلود اپ سفیر</li>
+          <li>ثبت نام راننده تاکسی اینترنتی</li>
+          <li>پرسش متداول سفیران</li>
+          <li>شرایط و قوانین سفیران</li>
+          <li>باشگاه سفیران</li>
+        </ul>
+        <ul>
+          <h6>کسب و کار ها</h6>
+          <li>پنل سازمانی تپسی</li>
+          <li>خرید کد اعتبار و تخفیف</li>
+          <li>دریافت Api</li>
+        </ul>
+        <div class="footer__accept">
+          <div class="footer__accept--item">
+            <img class="footer__img" src="assets/images/ertebat.png" alt="" />
+          </div>
+          <div class="footer__accept--item">
+            <img class="footer__img" src="assets/images/etehadiye.png" alt="" />
+          </div>
+        </div>
+      </article>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
